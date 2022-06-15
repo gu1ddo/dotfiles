@@ -4,11 +4,12 @@ set showbreak=+++
 set textwidth=100
 set showmatch	
  
-set hlsearch	
+set nohlsearch	
 set smartcase
 set ignorecase	
 set incsearch
  
+"set colorcolumn=80
 set autoindent
 set shiftwidth=4
 set smartindent	
@@ -26,8 +27,7 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-inoremap <Up> <NOP>
+inoremap <UP> <NOP>
 inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
-
