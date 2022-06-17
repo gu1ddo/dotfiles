@@ -8,9 +8,7 @@ set nohlsearch
 set smartcase
 set ignorecase	
 set incsearch
-set visualbell
-set noerrorbell
-
+ 
 "set colorcolumn=80
 set autoindent
 set shiftwidth=4
