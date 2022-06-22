@@ -9,7 +9,7 @@ set smartcase
 set ignorecase	
 set incsearch
 set visualbell
-set noerrorbell
+"set noerrorbell
 
 "set colorcolumn=80
 set autoindent
