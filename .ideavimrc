@@ -1,33 +1,84 @@
-set number! relativenumber!
-set linebreak
-set showbreak=+++ 	
-set textwidth=100
-set showmatch	
- 
-set nohlsearch	
-set smartcase
-set ignorecase	
+"" Common settings -------------------------
+set clipboard+=unnamed
+set clipboard+=ideaput
+set scrolloff=10
 set incsearch
- 
-"set colorcolumn=80
-set autoindent
-set shiftwidth=4
-set smartindent	
-set smarttab
-set softtabstop=4	
-set expandtab 
+set number relativenumber
+let mapleader=";"
 
-set ruler	
- 
-set undolevels=1000	
-set backspace=indent,eol,start	
+"nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
 
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+nnoremap <leader>c :action CommentByLineComment<CR>
+set visualbell
 
-inoremap <UP> <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
+"nnoremap <c-\> :action SplitVertically<CR>
+"nnoremap <c--> :action SplitHorizontally<CR>
+"nnoremap <c-=> :action Unsplit<CR>
+nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
+
+nnoremap <TAB> :action PreviousTab<CR>
+nnoremap <s-TAB> :action NextTab<CR>
+
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>zc :action CollapseAllRegions<CR>
+nnoremap <leader>zo :action ExpandAllRegions<CR>
+
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+
+nnoremap ge :action GotoNextError<CR>
+nnoremap gE :action GotoPreviousError<CR>
+
+nnoremap gc :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotToDeclaration<CR>
+nnoremap gp :action GotToSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+
+""" NERDTree plugin  --------------------------------
+" Emulates NERDTree
+" Basic Commands:
+"   Ctrl-n  Open NERDTree (mapped bellow)
+"   q	    Close the NERDTree window
+"   o   	Open files, directories and bookmarks
+"   go   	Open selected file, but leave cursor in the NERDTree
+"   i   	Open selected file in a split window
+"   gi   	Same as i, but leave the cursor on the NERDTree
+"   s   	Open selected file in a new vsplit
+"   gs   	Same as s, but leave the cursor on the NERDTree
+"   <C-J>	Jump down to next sibling of the current directory
+"   <C-K>	Jump up to previous sibling of the current directory
+"   R	    Recursively refresh the current root
+"   m	    Display the NERDTree menu
+" See  https://github.com/JetBrains/ideavim/wiki/NERDTree-support for details
+set NERDTree
+map <c-n> :NERDTreeToggle<CR>
+
+"" Plugins  --------------------------------
+""" Surround Plugin  --------------------------------
+" Emulates vim-surround. Mappings to easily delete, change and add such surroundings in pairs
+" Basic Commands:
+"   cs   Change surroundings
+"   cst  Change surroundings tag
+"   ds   Delete surroundings
+"   dst  Delete surroundings tag
+"   ys   Surround text object
+" See https://github.com/tpope/vim-surround/blob/master/doc/surround.txt for details
+set surround
+
+"Plug 'terryma/vim-multiple-cursors'
+
+Plug 'tpope/vim-commentary'
+
+""" highlightedyank plugin  --------------------------------
+" Emulates vim-highlightedyank
+" Highlight yanked text
+" See https://github.com/machakann/vim-highlightedyank for details
+Plug 'machakann/vim-highlightedyank'
