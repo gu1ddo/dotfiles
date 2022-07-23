@@ -1,0 +1,138 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "alt+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "alt+3",
+    "command": "-workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "alt+4",
+    "command": "-workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "alt+5",
+    "command": "-workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "alt+6",
+    "command": "-workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "alt+7",
+    "command": "-workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "alt+8",
+    "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "alt+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+alt+meta+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+k ctrl+h",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  }
+]
